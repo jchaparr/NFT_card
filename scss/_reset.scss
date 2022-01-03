@@ -1,0 +1,64 @@
+/* -----------------*/
+/* Reset            */
+/* -----------------*/
+
+// Use on every project
+// Box Sizing
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Reset Margins
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img,
+picture {
+  width: 100%;
+}
+
+// Set up the body
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Chivo", sans-serif;
+  overflow: scroll;
+}
+
+// Make images easier
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+// Make form elements easier
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// Remove animations for people who've turned them off
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
