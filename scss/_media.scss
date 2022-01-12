@@ -46,6 +46,18 @@
             margin: 0 0.5rem 0 0;
           }
         }
+
+        .rate-container {
+          p {
+            color: var(--cyan);
+          }
+        }
+
+        .time-container {
+          p {
+            color: var(--soft-blue);
+          }
+        }
       }
 
       .underline {
