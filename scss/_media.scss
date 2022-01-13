@@ -13,14 +13,51 @@
       background: var(--very-dark-blue-card);
       border-radius: 10px;
 
-      img {
-        border-radius: 10px;
-        margin-bottom: 1rem;
+      .img-container {
+        position: relative;
+
+        &:hover .overlay {
+          opacity: 1;
+        }
+        img {
+          border-radius: 10px;
+          margin-bottom: 1rem;
+          cursor: pointer;
+        }
+
+        .overlay {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: all 0.25s ease;
+          background-color: rgba(0, 255, 255, 0.7);
+          cursor: pointer;
+          border-radius: 10px;
+
+          i {
+            color: var(--white);
+            font-size: 3rem;
+          }
+        }
       }
 
       .title {
         color: var(--white);
         margin-bottom: 1rem;
+        cursor: pointer;
+        transition: color 0.25s;
+
+        &:hover {
+          color: var(--cyan);
+        }
       }
 
       .description {
@@ -80,6 +117,12 @@
 
           span {
             color: var(--white);
+            cursor: pointer;
+            transition: color 0.25s;
+
+            &:hover {
+              color: var(--cyan);
+            }
           }
         }
       }
